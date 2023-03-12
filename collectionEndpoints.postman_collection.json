@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "310475aa-580d-4f7a-97dd-23c632ba0ba8",
+		"name": "Endpoint Acme",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7119/api/Usuario",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7119",
+							"path": [
+								"api",
+								"Usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idUsuario\": 0,\r\n  \"username\": \"string\",\r\n  \"password\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7119/api/Usuario/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7119",
+							"path": [
+								"api",
+								"Usuario",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idUsuario\": 0,\r\n  \"username\": \"string\",\r\n  \"password\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7119/api/Usuario/registro",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7119",
+							"path": [
+								"api",
+								"Usuario",
+								"registro"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Encuesta",
+			"item": [
+				{
+					"name": "Encuesta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7119/api/Encuesta",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7119",
+							"path": [
+								"api",
+								"Encuesta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Encuesta por usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7119/api/Encuesta/user/id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7119",
+							"path": [
+								"api",
+								"Encuesta",
+								"user",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Encuesta individual",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7119/api/Encuesta/user/id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7119",
+							"path": [
+								"api",
+								"Encuesta",
+								"user",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Encuesta",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"XXXXX\",\r\n    \"descripcion\": \"XXXXX\",\r\n    \"idUsuario\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7119/api/Encuesta/id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7119",
+							"path": [
+								"api",
+								"Encuesta",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Encuesta",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7119/api/Encuesta/id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7119",
+							"path": [
+								"api",
+								"Encuesta",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar encuesta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"XXXXX\",\r\n    \"descripcion\": \"XXXXX\",\r\n    \"idUsuario\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7119/api/Encuesta",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7119",
+							"path": [
+								"api",
+								"Encuesta"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Campo",
+			"item": [
+				{
+					"name": "Agregar campo",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar Campo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7119/api/Campo/id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7119",
+							"path": [
+								"api",
+								"Campo",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Campos por encuesta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7119/api/Campo/id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7119",
+							"path": [
+								"api",
+								"Campo",
+								"id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

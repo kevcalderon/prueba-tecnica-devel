@@ -1,6 +1,5 @@
 import { Alert, Button, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { URL_API } from "../constants";
 
 function TableEncuestas(props) {
   const nuevaFuncionEliminar = (idEncuesta) => {
@@ -28,7 +27,11 @@ function TableEncuestas(props) {
               return (
                 <tr key={encuesta.idEncuesta}>
                   <td>
-                    <Link to={URL_API + "/Encuesta/" + encuesta.idEncuesta}>
+                    <Link
+                      to={
+                        "http://localhost:3000/Encuesta/" + encuesta.idEncuesta
+                      }
+                    >
                       {" "}
                       Enlace{" "}
                     </Link>

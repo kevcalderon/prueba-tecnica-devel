@@ -210,11 +210,11 @@ function Encuesta() {
                   ? "No hay campos agregados :c"
                   : campos.map((campo, index) => {
                       let badgeColor;
-                      if (campo.tipo === 1) {
+                      if (campo.idTipo === 1) {
                         badgeColor = "success";
-                      } else if (campo.tipo === 2) {
+                      } else if (campo.idTipo === 2) {
                         badgeColor = "info";
-                      } else if (campo.tipo === 3) {
+                      } else if (campo.idTipo === 3) {
                         badgeColor = "warning";
                       }
                       return (
@@ -306,7 +306,7 @@ function Encuesta() {
                 <Form.Check
                   type="checkbox"
                   label="¿Es requerido?"
-                  {...registerCampo("isRequerido", { valueAsNumber: true })}
+                  {...registerCampo("isRequerido")}
                 />
               </Form.Group>
               <Button variant="primary" type="submit">
@@ -367,30 +367,6 @@ function Encuesta() {
                   }}
                 />
               </Form.Group>
-              <hr></hr>
-              <h5>Campos agregados:</h5>
-              {camposEdit.length === 0
-                ? "No hay campos agregados :c"
-                : campos.map((campo, index) => {
-                    let badgeColor;
-                    if (campo.tipo === 1) {
-                      badgeColor = "success";
-                    } else if (campo.tipo === 2) {
-                      badgeColor = "info";
-                    } else if (campo.tipo === 3) {
-                      badgeColor = "warning";
-                    }
-                    return (
-                      <Badge
-                        key={index}
-                        bg={badgeColor}
-                        style={{ margin: "2%", fontSize: "100%" }}
-                      >
-                        {campo.nombre}
-                      </Badge>
-                    );
-                  })}
-              <hr></hr>
               <Button variant="warning" type="submit">
                 Editar encuesta
               </Button>

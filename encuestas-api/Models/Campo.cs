@@ -9,7 +9,7 @@ namespace encuestas_api.Models
         public string nombre { get; set; } = null!;
         public string titulo { get; set; } = null!;
    
-        public int isRequerido { get; set; }
+        public bool isRequerido { get; set; }
 
         public int idTipo { get; set; }
 
